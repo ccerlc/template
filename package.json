@@ -69,10 +69,7 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ],
-    "env": {
-      "NODE_ENV": "development"
-    }
+    ]
   },
   "browserslist": {
     "production": [
@@ -141,10 +138,5 @@
       "jest-watch-typeahead/testname"
     ],
     "resetMocks": true
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
   }
 }
