@@ -1,3 +1,12 @@
+1. 文件名需要使用JSX后缀，方便自动格式化代码
+2. 需要配置vscode
+```
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+```
+3. workspack需要设置`"editor.formatOnSave": true`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
