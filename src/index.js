@@ -3,11 +3,30 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.less';
 import App from './App';
+import {
+  BrowserRouter,
+  Routes,
+  Route, } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
+import { Layout } from 'antd';
+
+const { Header, Sider, Content } = Layout;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Layout>
+      <Header className='m-'>Header</Header>
+      <Layout>
+        <Sider> Sider </Sider>
+        <Content> 
+        <BrowserRouter>
+          <Routes>
+            <Route path="/home" element={<App />} />
+          </Routes>
+        </BrowserRouter>  
+        </Content>
+      </Layout>
+    </Layout>
   </React.StrictMode>,
   document.getElementById('root')
 );
