@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.less';
 import App from './App';
+import About from './About';
 import {
   BrowserRouter,
   Routes,
@@ -15,13 +16,14 @@ const { Header, Sider, Content } = Layout;
 ReactDOM.render(
   <React.StrictMode>
     <Layout>
-      <Header className='m-'>Header</Header>
+      <Header>Header</Header>
       <Layout>
         <Sider> Sider </Sider>
         <Content> 
         <BrowserRouter>
           <Routes>
             <Route path="/home" element={<App />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </BrowserRouter>  
         </Content>
