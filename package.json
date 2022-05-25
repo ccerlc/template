@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint --max-warnings=0 --ext .jsx,.js src/"
   },
   "dependencies": {
     "antd": "^4.19.5",
