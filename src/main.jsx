@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.less';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from 'antd';
 import App from './App';
 import About from './About';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import reportWebVitals from './reportWebVitals';
-import { Layout } from 'antd';
 
 const { Header, Sider, Content } = Layout;
 
